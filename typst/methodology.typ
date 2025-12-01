@@ -19,3 +19,13 @@ Removed “batch” (age, country) effects [based on healthy controls].
 
 
 ==  Analysis
+
+=== Simulations
+
+=== Additive model
+
+=== Model with interaction effect
+
+== Evaluation metrics
+
+== Software

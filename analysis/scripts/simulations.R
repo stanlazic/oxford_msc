@@ -16,7 +16,7 @@ source("../src/functions.R")
 set.seed(8)
 N <- 100
 x <- sort(runif(N))
-B <- iSpline(x, df = 4, intercept=FALSE, degree = 2)
+B <- iSpline(x, df = 6, intercept=FALSE)
 
 
 intercept <- -3
@@ -238,3 +238,5 @@ abline(v=knots(B, "boundary"), lty=2, col="steelblue")
 
 plot(I(y_hat * -1)~ etas)
 abline(0, 1, lty = 2)
+
+

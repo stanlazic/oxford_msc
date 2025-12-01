@@ -7,12 +7,12 @@ library(CalibrationCurves)
 library(predtools)
 library(mice)
 
-source("functions.R")
-source("new_functions.R")
+source("../src/functions.R")
+#source("new_functions.R")
 
 
 # d <- read_csv("../data_from_ICR/Cancer Model Training Data 20250228.csv")
-d <- read_csv("../data_from_ICR/Cancer Model Training Data 20250828.csv")
+d <- read_csv("../data/Cancer Model Training Data 20250828.csv")
 
 d2 <- select_samples(d) %>%
   clean_raw_data() %>%
